@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.mrpei</groupId>
+
     <artifactId>mall-search</artifactId>
     <packaging>pom</packaging>
     <modules>
@@ -18,5 +18,26 @@
         <module>mall-search-service</module>
     </modules>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.mrpei</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <!-- 配置tomcat插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <path>/</path>
+                    <port>8082</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

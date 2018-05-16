@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a32c3bff-14d1-460c-97f3-a119feb55a8f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="a32c3bff-14d1-460c-97f3-a119feb55a8f" name="Default" comment="add dependencies">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_front_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_front_web_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_front_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_front_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_manager_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_manager_web_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_manager_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_manager_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_search_service_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_search_service_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_search_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_search_service_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_sso_service_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_sso_service_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mall_sso_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mall_sso_service_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-front-web/mall-front-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-front-web/mall-front-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-front-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-front-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager-web/mall-manager-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager-web/mall-manager-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/mall-manager-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/mall-manager-dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-interface/mall-manager-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-interface/mall-manager-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-pojo/mall-manager-pojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-pojo/mall-manager-pojo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-pojo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/mall-search-interface/mall-search-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/mall-search-interface/mall-search-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/mall-search-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/mall-search-interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/mall-search-service/mall-search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/mall-search-service/mall-search-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/mall-search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/mall-search-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/mall-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/mall-search.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/mall-sso-interface/mall-sso-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/mall-sso-interface/mall-sso-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/mall-sso-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/mall-sso-interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/mall-sso-service/mall-sso-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/mall-sso-service/mall-sso-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/mall-sso-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/mall-sso-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/mall-sso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/mall-sso.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-parent/target/" />
     <ignored path="$PROJECT_DIR$/mall-common/target/" />
@@ -32,14 +64,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="69">
-                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-front-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-manager-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-search/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall-sso/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -56,6 +130,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,17 +144,23 @@
         <option value="$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/jedis/JedisClient.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/jedis/JedisClientCluster.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/jedis/JedisClientPool.java" />
-        <option value="$PROJECT_DIR$/mall-front-web/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-manager-web/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-search/mall-search-service/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sso/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sso/mall-sso-service/pom.xml" />
         <option value="$PROJECT_DIR$/database-generator/pom.xml" />
         <option value="$PROJECT_DIR$/mall-parent/pom.xml" />
         <option value="$PROJECT_DIR$/database-generator/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/mall-sso/mall-sso-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-sso/mall-sso-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-search/mall-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-search/mall-search-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-front-web/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-search/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-sso/pom.xml" />
       </list>
     </option>
   </component>
@@ -118,11 +203,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="151" />
-    <option name="y" value="213" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="114" />
+    <option name="y" value="124" />
     <option name="width" value="1720" />
-    <option name="height" value="970" />
+    <option name="height" value="759" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -138,7 +223,12 @@
           <expand>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso-interface" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,20 +323,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526451944586</updated>
-      <workItem from="1526451946874" duration="7619000" />
+      <workItem from="1526451946874" duration="9547000" />
     </task>
+    <task id="LOCAL-00001" summary="add readme">
+      <created>1526461670772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526461670773</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add readme">
+      <created>1526461814210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526461814210</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7619000" />
+    <option name="totallyTimeSpent" value="9547000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="129" y="164" width="1720" height="759" extended-state="0" />
+    <frame x="114" y="124" width="1720" height="759" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3293556" />
-      <window_info anchor="right" id="Maven Projects" weight="0.32951808" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.32951808" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -256,7 +361,7 @@
       <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32695374" />
+      <window_info anchor="bottom" id="Messages" weight="0.3258786" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
@@ -265,7 +370,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -283,6 +388,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add readme" />
+    <MESSAGE value="add dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dependencies" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mall-parent/src/test/java/cn/mrpei/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -295,13 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -351,48 +454,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-front-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1291" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/mall-sso-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/mall-sso-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-parent/database-generator/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -449,6 +510,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="506">
+            <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager-web/src/main/java/cn/mrpei/manager/controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -456,13 +541,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="69">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/mall-manager-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/mall-sso-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/mall-sso-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-front-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -483,7 +645,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -543,7 +705,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
