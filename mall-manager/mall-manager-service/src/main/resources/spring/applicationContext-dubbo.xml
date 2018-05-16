@@ -10,12 +10,22 @@
 
     <!-- 使用dubbo发布服务 -->
     <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="xmall-manager" />
-    <dubbo:registry protocol="zookeeper"
-                    address="127.0.0.1:2181" />
+    <dubbo:application name="mall-manager" />
+    <dubbo:registry protocol="zookeeper" address="zookeeper://119.28.83.123:2181"/>
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880" />
+
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="cn.mrpei.manager.service.ItemService" ref="itemServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ItemParamService" ref="itemParamServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ItemParamItemService" ref="itemParamItemServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ItemCatService" ref="itemCatServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ContentService" ref="contentServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ContentCategoryService" ref="contentCategoryServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.PictureService" ref="pictureServiceImpl" timeout="10000"/>
+
+
+
+
 
 </beans>

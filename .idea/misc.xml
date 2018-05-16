@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/mall-front-web" />
     <file type="web" url="file://$PROJECT_DIR$/mall-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/mall-manager/mall-manager-service" />
     <file type="web" url="file://$PROJECT_DIR$/mall-search/mall-search-service" />
     <file type="web" url="file://$PROJECT_DIR$/mall-sso/mall-sso-service" />
   </component>

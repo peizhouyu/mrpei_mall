@@ -5,6 +5,7 @@ import cn.mrpei.common.utils.IDUtils;
 import cn.mrpei.manager.service.PictureService;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.HashMap;
@@ -20,6 +21,7 @@ import java.util.Map;
  * @copyright Copyright © 2004-2018 京东JD.com ALL Right Reserved
  * @see
  */
+@Service
 public class PictureServiceImpl implements PictureService {
 
     @Value("${FTP_ADDRESS}")
