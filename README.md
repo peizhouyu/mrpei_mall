@@ -1,6 +1,6 @@
-##电商网站服务化
+## 电商网站服务化
 
-###前端
+### 前端
 
 架构模式 前后端完全分离，纯静态方式，分层架构模块化  <br>
 模块化方案 CommonJS+Webpack  <br>
@@ -11,7 +11,7 @@
 代理工具 Charles/Fiddler <br>
 语言环境 JQuery,Webpack,NodeJs,Git <br>
 
-###服务端
+### 服务端
 基本web框架：Spring、SpringMVC、Mybatis<br>
 管理系统展示层：JSP、JSTL、jQuery、jQuery plugin、EasyUI、KindEditor（富文本编辑器）、CSS+DIV<br>
 依赖管理：maven 3.5.0<br>
