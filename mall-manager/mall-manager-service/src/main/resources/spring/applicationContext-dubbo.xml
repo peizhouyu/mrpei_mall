@@ -16,13 +16,13 @@
     <dubbo:protocol name="dubbo" port="20880" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="cn.mrpei.manager.service.ItemService" ref="itemServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.ItemParamService" ref="itemParamServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.ItemParamItemService" ref="itemParamItemServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.ItemCatService" ref="itemCatServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.ContentService" ref="contentServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.ContentCategoryService" ref="contentCategoryServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.PictureService" ref="pictureServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.UserService" ref="userServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.CartService" ref="cartServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.CategoryService" ref="categoryServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.FileService" ref="fileServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.OrderService" ref="orderServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ProductService" ref="productServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.manager.service.ShippingService" ref="shippingServiceImpl" timeout="10000"/>
 
 
 

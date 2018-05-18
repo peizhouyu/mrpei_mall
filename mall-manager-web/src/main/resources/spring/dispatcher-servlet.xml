@@ -9,15 +9,14 @@
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-    <context:component-scan base-package="cn.mrpei.manager.controller" />
+
+    <!--只扫描Controller-->
+    <context:component-scan base-package="cn.mrpei.manager.controller" annotation-config="true" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
     <mvc:annotation-driven />
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/" />
-        <property name="suffix" value=".jsp" />
-    </bean>
-    <!-- 资源映射 -->
-    <mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
-    <mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+
+
 
     <!-- 定义文件上传解析器 -->
     <bean id="multipartResolver"
