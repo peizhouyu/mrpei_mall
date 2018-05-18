@@ -6,6 +6,7 @@ import cn.mrpei.manager.service.ContentCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -47,4 +48,21 @@ public class ContentCategoryController {
         MallResult result = contentCategoryService.insertContentCategory(parentId, name);
         return result;
     }
+
+    //删除节点
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public MallResult  deleteContentCatgory(Long parentId, Long id){
+
+        MallResult result = contentCategoryService.deleteContentCategory(parentId, id);
+        return result;
+    }
+
+    //更新节点
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    @ResponseBody
+    public MallResult updateContentCategory(Long id, String name) {
+        return contentCategoryService.updateContentCategory(id, name);
+    }
+
 }

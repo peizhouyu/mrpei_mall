@@ -1,5 +1,6 @@
 package cn.mrpei.manager.controller;
 
+import cn.mrpei.common.pojo.EUDResult;
 import cn.mrpei.common.pojo.MallResult;
 import cn.mrpei.manager.pojo.TbContent;
 import cn.mrpei.manager.service.ContentService;
@@ -19,7 +20,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @see
  */
 @Controller
-@RequestMapping("/content")
 public class ContentController {
 
     @Autowired
@@ -31,10 +31,33 @@ public class ContentController {
      * @param content the content
      * @return the mall result
      */
-    @RequestMapping("/save")
+    @RequestMapping("/content/save")
     @ResponseBody
     public MallResult insertContent(TbContent content) {
         MallResult result = contentService.insertContent(content);
+        return result;
+    }
+
+    //加载列表
+    @RequestMapping("/content/query/list")
+    @ResponseBody
+    public EUDResult getContentList(Long page, Long rows){
+        EUDResult result = contentService.getContentList(page, rows);
+        return result;
+    }
+
+    //删除
+    @RequestMapping("/content/delete")
+    @ResponseBody
+    public MallResult deleteContent(String ids){
+        return contentService.deleteContent(ids);
+    }
+
+    //更新
+    @RequestMapping("/rest/content/edit")
+    @ResponseBody
+    public MallResult updateItem(TbContent content){
+        MallResult result=contentService.updateContent(content);
         return result;
     }
 }

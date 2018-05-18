@@ -1,8 +1,11 @@
 package cn.mrpei.manager.controller;
 
+import cn.mrpei.common.pojo.EUDResult;
 import cn.mrpei.common.pojo.EUDataGridResult;
 import cn.mrpei.common.pojo.MallResult;
 import cn.mrpei.manager.pojo.TbItem;
+import cn.mrpei.manager.pojo.TbItemDesc;
+import cn.mrpei.manager.pojo.TbItemParamItem;
 import cn.mrpei.manager.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,43 +25,70 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @see
  */
 @Controller
-@RequestMapping("/item")
 public class ItemController {
 
     @Autowired
     private ItemService itemService;
 
-    /**
-     * Gets item by id.
-     * 商品管理
-     * @param itemId the item id
-     * @return the item by id
-     */
-    @RequestMapping("/{itemId}")
+    @RequestMapping("/item/{itemId}")
     @ResponseBody
-    public TbItem getItemById(@PathVariable Long itemId) {
-        TbItem tbItem = itemService.getItemById(itemId);
+    public TbItem getItemById(@PathVariable  Long itemId){
+        TbItem tbItem=itemService.getItemById(itemId);
         return tbItem;
     }
 
-    /**
-     * Gets item list.
-     *
-     * @param page the page
-     * @param rows the rows
-     * @return the item list
-     */
-    @RequestMapping("/list")
+    @RequestMapping("/item/list")
     @ResponseBody
-    public EUDataGridResult getItemList(Integer page, Integer rows) {
+    public EUDataGridResult getItemList(Integer page, Integer rows){
         EUDataGridResult result = itemService.getItemList(page, rows);
         return result;
     }
 
-    @RequestMapping(value="/save", method=RequestMethod.POST)
+
+    //接收表单中的内容，使用一个pojo接收表单内容
+    @RequestMapping(value="/item/save",method=RequestMethod.POST)
     @ResponseBody
-    private MallResult createItem(TbItem item, String desc, String itemParams) throws Exception {
-        MallResult result = itemService.createItem(item, desc, itemParams);
+    public MallResult createItem(TbItem item,String desc,String itemParams) throws Exception{
+        MallResult result=itemService.createItem(item,desc,itemParams);
         return result;
     }
+
+
+    //删除商品
+    @RequestMapping("/rest/item/delete")
+    @ResponseBody
+    public MallResult  deleteItem(String ids){
+        return itemService.deleteItem(ids);
+
+    }
+
+    //商品描述
+    @RequestMapping("/rest/item/query/item/desc/{id}")
+    @ResponseBody
+    public TbItemDesc listItemDesc(@PathVariable Long id) {
+        return itemService.listItemDesc(id);
+    }
+
+    //更新
+    @RequestMapping(value="/rest/item/update",method=RequestMethod.POST)
+    @ResponseBody
+    public MallResult updateItem(TbItem item, TbItemDesc desc, TbItemParamItem itemParams){
+        MallResult result=itemService.updateItem(item,desc,itemParams);
+        return result;
+    }
+
+    //下架
+    @RequestMapping("/rest/item/instock")
+    @ResponseBody
+    public MallResult  instockItem(String ids){
+        return itemService.instockItem(ids);
+    }
+
+    //上架
+    @RequestMapping("/rest/item/reshelf")
+    @ResponseBody
+    public MallResult  reshelfItem(String ids){
+        return itemService.reshelfItem(ids);
+    }
+
 }

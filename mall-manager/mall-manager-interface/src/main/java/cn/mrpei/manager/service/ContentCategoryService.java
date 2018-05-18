@@ -32,4 +32,7 @@ public interface ContentCategoryService {
      * @return the mall result
      */
     MallResult insertContentCategory(long parentId, String name);
+
+    MallResult deleteContentCategory(Long parentId, Long id);
+    MallResult updateContentCategory(Long id, String name);
 }

@@ -1,6 +1,8 @@
 package cn.mrpei.manager.pojo;
 
-public class TbRolePerm {
+import java.io.Serializable;
+
+public class TbRolePerm implements Serializable {
     private Integer id;
 
     private Integer roleId;

@@ -1,6 +1,8 @@
 package cn.mrpei.manager.pojo;
 
-public class TbRole {
+import java.io.Serializable;
+
+public class TbRole implements Serializable {
     private Integer id;
 
     private String name;

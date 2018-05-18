@@ -1,5 +1,6 @@
 package cn.mrpei.manager.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 /**
@@ -12,7 +13,7 @@ import java.util.Date;
  * @copyright Copyright © 2004-2018 京东JD.com ALL Right Reserved
  * @see
  */
-public class TbItem {
+public class TbItem implements Serializable {
     private Long id;
 
     private String title;

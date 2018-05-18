@@ -1,5 +1,6 @@
 package cn.mrpei.common.pojo;
 
+import java.io.Serializable;
 import java.util.List;
 /**
  * @author peizhouyu (大数据部-大数据研发部-平台产品研发部)
@@ -11,7 +12,7 @@ import java.util.List;
  * @copyright Copyright ? 2004-2018 京东JD.com ALL Right Reserved
  * @see
  */
-public class EUDataGridResult {
+public class EUDataGridResult implements Serializable {
 
 	private long total;
 	private List<?> rows;

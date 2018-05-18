@@ -1,9 +1,10 @@
 package cn.mrpei.manager.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class TbMember {
+public class TbMember implements Serializable {
     private Long id;
 
     private String username;

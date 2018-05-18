@@ -1,7 +1,9 @@
 package cn.mrpei.manager.service;
 
+import cn.mrpei.common.pojo.EUDResult;
 import cn.mrpei.common.pojo.MallResult;
 import cn.mrpei.manager.pojo.TbItemParam;
+import cn.mrpei.manager.pojo.TbItemParamItem;
 
 /**
  * The interface Item param service.
@@ -31,5 +33,8 @@ public interface ItemParamService {
      * @return the mall result
      */
     MallResult insertItemParam(TbItemParam itemParam);
+    EUDResult getItemList(int page, int rows);
+    MallResult deleteParam(String ids);
+    TbItemParamItem listParamDesc(Long id);
 
 }

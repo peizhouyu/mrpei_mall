@@ -1,8 +1,9 @@
 package cn.mrpei.manager.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbPanelContent {
+public class TbPanelContent implements Serializable {
     private Integer id;
 
     private Integer panelId;

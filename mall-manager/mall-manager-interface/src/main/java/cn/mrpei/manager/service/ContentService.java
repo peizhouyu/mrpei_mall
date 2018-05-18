@@ -1,5 +1,6 @@
 package cn.mrpei.manager.service;
 
+import cn.mrpei.common.pojo.EUDResult;
 import cn.mrpei.common.pojo.MallResult;
 import cn.mrpei.manager.pojo.TbContent;
 
@@ -15,4 +16,7 @@ import cn.mrpei.manager.pojo.TbContent;
  */
 public interface ContentService {
     MallResult insertContent(TbContent content);
+    EUDResult getContentList(long page, long pageSize);
+    MallResult deleteContent(String ids);
+    MallResult updateContent(TbContent content);
 }

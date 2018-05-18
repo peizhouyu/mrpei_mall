@@ -1,6 +1,8 @@
 package cn.mrpei.manager.pojo;
 
-public class TbAddress {
+import java.io.Serializable;
+
+public class TbAddress implements Serializable {
     private Long addressId;
 
     private Long userId;

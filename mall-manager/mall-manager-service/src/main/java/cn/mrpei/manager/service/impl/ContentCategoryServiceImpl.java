@@ -76,4 +76,50 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
         return MallResult.ok(contentCategory);
     }
 
+
+    //删除节点
+    @Override
+    public MallResult deleteContentCategory(Long parentId, Long id) {
+
+        contentCategoryMapper.deleteByPrimaryKey(id);
+        // 判断父节点下是否还有子节点
+        TbContentCategoryExample example = new TbContentCategoryExample();
+        TbContentCategoryExample.Criteria criteria = example.createCriteria();
+        criteria.andParentIdEqualTo(parentId);
+        List<TbContentCategory> list = contentCategoryMapper
+                .selectByExample(example);
+        // 父节点
+        TbContentCategory parentCat = contentCategoryMapper
+                .selectByPrimaryKey(parentId);
+        // 如果没有子节点，设置为false
+        if (list != null && list.size() > 0) {
+            parentCat.setIsParent(true);
+        } else {
+            parentCat.setIsParent(false);
+        }
+        return MallResult.ok();
+    }
+
+
+    //更新
+    @Override
+    public MallResult updateContentCategory(Long id, String name) {
+        TbContentCategory tcc = contentCategoryMapper.selectByPrimaryKey(id);
+
+        TbContentCategory  contentCategory=new TbContentCategory();
+        contentCategory.setCreated(tcc.getCreated());
+        contentCategory.setId(id);
+        contentCategory.setIsParent(tcc.getIsParent());
+        contentCategory.setName(name);
+        contentCategory.setParentId(tcc.getParentId());
+        contentCategory.setSortOrder(tcc.getSortOrder());
+        contentCategory.setStatus(tcc.getStatus());
+        contentCategory.setUpdated(new Date());
+
+        contentCategoryMapper.updateByPrimaryKey(contentCategory);
+        return MallResult.ok();
+
+
+    }
+
 }

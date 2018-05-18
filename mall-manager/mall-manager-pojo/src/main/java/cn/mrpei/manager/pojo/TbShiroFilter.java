@@ -1,6 +1,8 @@
 package cn.mrpei.manager.pojo;
 
-public class TbShiroFilter {
+import java.io.Serializable;
+
+public class TbShiroFilter implements Serializable {
     private Integer id;
 
     private String name;

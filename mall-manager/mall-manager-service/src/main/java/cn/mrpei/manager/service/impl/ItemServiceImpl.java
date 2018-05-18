@@ -2,20 +2,19 @@ package cn.mrpei.manager.service.impl;
 
 import cn.mrpei.common.pojo.EUDataGridResult;
 import cn.mrpei.common.pojo.MallResult;
+import cn.mrpei.common.utils.ExceptionUtil;
 import cn.mrpei.common.utils.IDUtils;
 import cn.mrpei.manager.dao.TbItemDescMapper;
 import cn.mrpei.manager.dao.TbItemMapper;
 import cn.mrpei.manager.dao.TbItemParamItemMapper;
-import cn.mrpei.manager.pojo.TbItem;
-import cn.mrpei.manager.pojo.TbItemDesc;
-import cn.mrpei.manager.pojo.TbItemExample;
-import cn.mrpei.manager.pojo.TbItemParamItem;
+import cn.mrpei.manager.pojo.*;
 import cn.mrpei.manager.service.ItemService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -105,6 +104,126 @@ public class ItemServiceImpl implements ItemService {
         }
         return MallResult.ok();
     }
+
+    @Override
+    public MallResult deleteItem(String ids) {
+        try {
+            String[] idsArray = ids.split(",");
+            List<Long> values = new ArrayList<Long>();
+            for(String id : idsArray) {
+                values.add(Long.parseLong(id));
+            }
+            TbItemExample e = new TbItemExample();
+            TbItemExample.Criteria c = e.createCriteria();
+            c.andIdIn(values);
+
+            List<TbItem> list = itemMapper.selectByExample(e);
+            if(list!=null && list.size()>0){
+                TbItem item=list.get(0);
+                item.setStatus(3);
+                itemMapper.updateByExample(item, e);
+            }
+            return MallResult.ok();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public TbItemDesc listItemDesc(Long id) {
+        return itemDescMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public MallResult updateItem(TbItem item, TbItemDesc desc, TbItemParamItem itemParamss) {
+        try {
+            //更新商品
+            TbItemExample e = new TbItemExample();
+            TbItemExample.Criteria c = e.createCriteria();
+            c.andIdEqualTo(item.getId());
+
+            TbItem tbItem = itemMapper.selectByPrimaryKey(item.getId());
+            item.setCreated(tbItem.getCreated());
+            item.setUpdated(new Date());
+            item.setStatus(1);
+            itemMapper.updateByExample(item, e);
+
+            //更新商品描述
+            TbItemDescExample de = new TbItemDescExample();
+            TbItemDescExample.Criteria criteria = de.createCriteria();
+            criteria.andItemIdEqualTo(item.getId());
+            desc.setItemId(item.getId());
+
+            desc.setCreated(tbItem.getCreated());
+            desc.setUpdated(new Date());
+            itemDescMapper.updateByExample(desc, de);
+
+            //更新规格
+			/*TaotaoResult result=updateItemParamItem(itemId, itemparam);
+			if(result.getStatus()!=200){
+				throw new Exception();
+			}
+			return TaotaoResult.ok();*/
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return MallResult.build(500, ExceptionUtil.getStackTrace(e));
+        }
+        return MallResult.ok();
+    }
+
+    @Override
+    public MallResult instockItem(String ids) {
+        try {
+            String[] idsArray = ids.split(",");
+            List<Long> values = new ArrayList<Long>();
+            for(String id : idsArray) {
+                values.add(Long.parseLong(id));
+            }
+            TbItemExample e = new TbItemExample();
+            TbItemExample.Criteria c = e.createCriteria();
+            c.andIdIn(values);
+
+            List<TbItem> list = itemMapper.selectByExample(e);
+            if(list!=null && list.size()>0){
+                TbItem item=list.get(0);
+                item.setStatus(2);
+                itemMapper.updateByExample(item, e);
+            }
+            return MallResult.ok();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public MallResult reshelfItem(String ids) {
+        try {
+            String[] idsArray = ids.split(",");
+            List<Long> values = new ArrayList<Long>();
+            for(String id : idsArray) {
+                values.add(Long.parseLong(id));
+            }
+            TbItemExample e = new TbItemExample();
+            TbItemExample.Criteria c = e.createCriteria();
+            c.andIdIn(values);
+            List<TbItem> list = itemMapper.selectByExample(e);
+            if(list!=null && list.size()>0){
+                TbItem item=list.get(0);
+                item.setStatus(1);
+                itemMapper.updateByExample(item, e);
+            }
+            return MallResult.ok();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
     /**
      * 添加商品描述
      * <p>Title: insertItemDesc</p>

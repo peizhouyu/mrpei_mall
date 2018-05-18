@@ -1,8 +1,11 @@
 package cn.mrpei.common.pojo;
+
+import java.io.Serializable;
+
 /**
  * easyUI树形控件节点格式
  */
-public class EUTreeNode {
+public class EUTreeNode implements Serializable {
 
 	private long id;
 	private String text;

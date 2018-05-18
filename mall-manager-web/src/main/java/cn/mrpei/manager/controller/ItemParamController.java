@@ -1,7 +1,9 @@
 package cn.mrpei.manager.controller;
 
+import cn.mrpei.common.pojo.EUDResult;
 import cn.mrpei.common.pojo.MallResult;
 import cn.mrpei.manager.pojo.TbItemParam;
+import cn.mrpei.manager.pojo.TbItemParamItem;
 import cn.mrpei.manager.service.ItemParamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,5 +44,29 @@ public class ItemParamController {
         itemParam.setParamData(paramData);
         MallResult result = itemParamService.insertItemParam(itemParam);
         return result;
+    }
+
+    @RequestMapping("/list")
+    @ResponseBody
+    public EUDResult getItemList(Integer page, Integer rows){
+        EUDResult result = itemParamService.getItemList(page, rows);
+        return result;
+    }
+
+
+    //加载商品规格
+    @RequestMapping("/item/query/{id}")
+    @ResponseBody
+    public TbItemParamItem listItemDesc(@PathVariable Long id) {
+        return itemParamService.listParamDesc(id);
+    }
+
+
+    //删除商品规格参数模板
+    @RequestMapping("/delete")
+    @ResponseBody
+    public MallResult  deleteParam(String ids){
+        return itemParamService.deleteParam(ids);
+
     }
 }

@@ -1,8 +1,9 @@
 package cn.mrpei.manager.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class TbOrderItem {
+public class TbOrderItem implements Serializable {
     private String id;
 
     private String itemId;

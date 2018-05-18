@@ -3,6 +3,8 @@ package cn.mrpei.manager.service;
 import cn.mrpei.common.pojo.EUDataGridResult;
 import cn.mrpei.common.pojo.MallResult;
 import cn.mrpei.manager.pojo.TbItem;
+import cn.mrpei.manager.pojo.TbItemDesc;
+import cn.mrpei.manager.pojo.TbItemParamItem;
 
 /**
  * The interface Item service.
@@ -45,4 +47,30 @@ public interface ItemService {
      * @throws Exception the exception
      */
     MallResult createItem(TbItem item, String desc, String itemParam) throws Exception;
+
+    MallResult deleteItem(String ids);
+
+    TbItemDesc listItemDesc(Long id);
+
+    /**
+     *
+     * 更新商品
+     * @param item
+     * @param desc
+     * @param itemParamss
+     * @return
+     */
+
+    MallResult updateItem(TbItem item, TbItemDesc desc, TbItemParamItem itemParamss);
+
+    /**
+     *
+     * 下架商品
+     * @param ids
+     * @return
+     */
+    MallResult instockItem(String ids);
+
+    //上架
+    MallResult reshelfItem(String ids);
 }
