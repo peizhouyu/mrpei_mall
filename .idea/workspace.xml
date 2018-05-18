@@ -821,6 +821,7 @@
       <list>
         <item itemvalue="Maven.mall-manager-service [tomcat7:run]" />
         <item itemvalue="Maven.mall-manager-service [tomcat7:run]" />
+        <item itemvalue="Maven.mall-manager-service [tomcat7:run]" />
       </list>
     </recent_temporary>
   </component>

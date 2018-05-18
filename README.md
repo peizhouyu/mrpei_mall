@@ -13,7 +13,7 @@
 
 ### 服务端
 基本web框架：Spring、SpringMVC、Mybatis<br>
-管理系统展示层：JSP、JSTL、jQuery、jQuery plugin、EasyUI、KindEditor（富文本编辑器）、CSS+DIV<br>
+管理系统展示层：当前分支重构中 <br>
 依赖管理：maven 3.5.0<br>
 版本控制：Git<br>
 权限控制：Shiro<br>
