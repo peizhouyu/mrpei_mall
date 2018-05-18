@@ -13,6 +13,7 @@
     <!-- 引用dubbo服务 -->
     <dubbo:application name="mall-manager-web"/>
     <dubbo:registry protocol="zookeeper" address="119.28.83.123:2181"/>
+
     <dubbo:reference interface="cn.mrpei.manager.service.ItemService" id="itemService" />
     <dubbo:reference interface="cn.mrpei.manager.service.ItemParamService" id="itemParamService" />
     <dubbo:reference interface="cn.mrpei.manager.service.ItemParamItemService" id="itemParamItemService" />

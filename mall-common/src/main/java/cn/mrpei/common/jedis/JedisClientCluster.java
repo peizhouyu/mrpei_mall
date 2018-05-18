@@ -1,5 +1,6 @@
 package cn.mrpei.common.jedis;
 
+import org.springframework.stereotype.Service;
 import redis.clients.jedis.JedisCluster;
 
 import java.util.List;
@@ -14,7 +15,8 @@ import java.util.List;
  * @copyright Copyright © 2004-2018 京东JD.com ALL Right Reserved
  * @see
  */
-public class JedisClientCluster implements JedisClient {
+
+public  class  JedisClientCluster implements JedisClient {
 
     private JedisCluster jedisCluster;
 
