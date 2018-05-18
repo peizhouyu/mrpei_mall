@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <!-- 引用dubbo服务 -->
+    <dubbo:application name="mall-manager-web"/>
+    <dubbo:registry protocol="zookeeper" address="119.28.83.123:2181"/>
+
+    <dubbo:reference interface="cn.mrpei.manager.service.UserService" id="userService" />
+    <dubbo:reference interface="cn.mrpei.manager.service.CartService" id="cartService" />
+    <dubbo:reference interface="cn.mrpei.manager.service.CategoryService" id="categoryService" />
+    <dubbo:reference interface="cn.mrpei.manager.service.FileService" id="fileService" />
+    <dubbo:reference interface="cn.mrpei.manager.service.OrderService" id="orderService" />
+    <dubbo:reference interface="cn.mrpei.manager.service.ProductService" id="productService" />
+    <dubbo:reference interface="cn.mrpei.manager.service.ShippingService" id="shippingService" />
+
+</beans>
