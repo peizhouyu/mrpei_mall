@@ -2,6 +2,8 @@ package cn.mrpei.manager.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.InputStream;
+
 /**
  * @author peizhouyu (大数据部-大数据研发部-平台产品研发部)
  * @version V1.0.0
@@ -14,6 +16,6 @@ import org.springframework.web.multipart.MultipartFile;
  */
 public interface FileService {
 
-    String upload(MultipartFile file, String path);
+    String upload(InputStream inputStream,String fileName, String path);
 
 }

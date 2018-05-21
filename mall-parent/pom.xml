@@ -65,6 +65,8 @@
     <mail.version>1.5.0-b01</mail.version>
     <tomcat.version>8.0.41</tomcat.version>
     <alipay.sdk.version>3.0.52.ALL</alipay.sdk.version>
+    <hessian.version>4.0.7</hessian.version>
+    <jetty.version>6.1.26</jetty.version>
   </properties>
 
 
@@ -75,6 +77,18 @@
         <groupId>com.alipay.sdk</groupId>
         <artifactId>alipay-sdk-java</artifactId>
         <version>${alipay.sdk.version}</version>
+      </dependency>
+      <!--dubbo协议 文件使用hessian协议进行传输-->
+      <dependency>
+        <groupId>com.caucho</groupId>
+        <artifactId>hessian</artifactId>
+        <version>${hessian.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty</artifactId>
+        <version>${jetty.version}</version>
       </dependency>
 
       <dependency>

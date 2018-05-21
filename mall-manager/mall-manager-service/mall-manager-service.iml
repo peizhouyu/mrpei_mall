@@ -77,6 +77,10 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="mall-manager-interface" />
+    <orderEntry type="library" name="Maven: com.caucho:hessian:4.0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.26" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:6.1.26" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.12.RELEASE" level="project" />

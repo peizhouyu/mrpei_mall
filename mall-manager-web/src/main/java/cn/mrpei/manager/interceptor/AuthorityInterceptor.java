@@ -1,4 +1,4 @@
-package cn.mrpei.front.interceptor;
+package cn.mrpei.manager.interceptor;
 
 
 import cn.mrpei.common.pojo.Const;

@@ -2,12 +2,14 @@ package cn.mrpei.manager.controller;
 
 
 import cn.mrpei.common.pojo.ServerResponse;
+import cn.mrpei.common.utils.FileUtil;
 import cn.mrpei.common.utils.PropertiesUtil;
 import cn.mrpei.manager.pojo.Product;
 import cn.mrpei.manager.service.FileService;
 import cn.mrpei.manager.service.ProductService;
 import cn.mrpei.manager.service.UserService;
 import com.google.common.collect.Maps;
+import org.apache.commons.fileupload.disk.DiskFileItem;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,9 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.util.Map;
 
 /**
@@ -80,7 +84,7 @@ public class ProductManageController {
     @ResponseBody
     public ServerResponse upload(@RequestParam(value = "upload_file",required = false) MultipartFile file, HttpServletRequest request){
         String path = request.getSession().getServletContext().getRealPath("upload");
-        String targetFileName = fileService.upload(file,path);
+        String targetFileName = FileUtil.upload(file,path);
         String url = PropertiesUtil.getProperty("ftp.server.http.prefix")+ targetFileName;
 
         Map fileMap = Maps.newHashMap();
@@ -96,7 +100,7 @@ public class ProductManageController {
         Map resultMap = Maps.newHashMap();
         //增加业务逻辑
         String path = request.getSession().getServletContext().getRealPath("upload");
-        String targetFileName = fileService.upload(file,path);
+        String targetFileName = FileUtil.upload(file,path);
         if (StringUtils.isBlank(targetFileName)){
             resultMap.put("success",false);
             resultMap.put("msg","上传失败");

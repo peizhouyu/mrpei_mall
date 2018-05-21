@@ -34,7 +34,7 @@ public class UserManageController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "login.do", method = RequestMethod.GET)
+    @RequestMapping(value = "login.do")
     @ResponseBody
     public ServerResponse<User> login(String username, String password, HttpSession session, HttpServletResponse httpServletResponse){
         ServerResponse<User> response = userService.login(username,password);
