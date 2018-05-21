@@ -3,6 +3,7 @@ package cn.mrpei.common.utils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,7 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 public class CookieUtil {
 
     private final static String COOKIE_DOMAIN = PropertiesUtil.getProperty("cookie.domain");
-    private final static String COOKIE_NAME = PropertiesUtil.getProperty("cookie_name");
+    private final static String COOKIE_NAME = PropertiesUtil.getProperty("cookie.name");
+
 
 
     public static String readLoginToken(HttpServletRequest request){

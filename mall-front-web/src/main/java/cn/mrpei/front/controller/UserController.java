@@ -53,7 +53,7 @@ public class UserController {
         return response;
     }
 
-    @RequestMapping(value = "/logout.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/logout.do")
     @ResponseBody
     public ServerResponse<String> logout(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse){
         //session.removeAttribute(Const.CURRENT_USER);
@@ -69,13 +69,13 @@ public class UserController {
         return userService.register(user);
     }
 
-    @RequestMapping(value = "/check_valid.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/check_valid.do")
     @ResponseBody
     public ServerResponse<String> checkValid(String str, String type){
         return userService.checkValid(str,type);
     }
 
-    @RequestMapping(value = "/get_user_info.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/get_user_info.do")
     @ResponseBody
     public ServerResponse<User> getUserInfo(HttpServletRequest httpServletRequest){
         //User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -137,7 +137,7 @@ public class UserController {
         return response;
     }
 
-    @RequestMapping(value = "/get_information.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/get_information.do")
     @ResponseBody
     public ServerResponse<User> getInformation(HttpServletRequest httpServletRequest){
         User currentUser = CommonMethod.checkLoginStatus(httpServletRequest);

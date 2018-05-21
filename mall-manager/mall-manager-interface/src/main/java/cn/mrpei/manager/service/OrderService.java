@@ -26,7 +26,7 @@ public interface OrderService {
     ServerResponse<OrderVo> getOrderDetail(Integer userId, Long orderNo);
     ServerResponse<PageInfo> getOrderList(Integer userId, int pageNum, int pageSize);
 
-    ServerResponse pay(Long orderNo, Integer userId, String path);
+//    ServerResponse pay(Long orderNo, Integer userId, String path);
     ServerResponse aliCallback(Map<String, String> params);
     ServerResponse queryOrderPayStatus(Integer userId, Long orderNo);
 

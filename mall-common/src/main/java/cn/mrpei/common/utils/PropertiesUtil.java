@@ -21,8 +21,8 @@ public class PropertiesUtil {
     private static Properties props;
 
     static {
-        String fileName = "mmall.properties";
-        String path = "properties/" + fileName;
+        String fileName = "mall.properties";
+        String path = "config/" + fileName;
         props = new Properties();
         try {
             props.load(new InputStreamReader(PropertiesUtil.class.getClassLoader().getResourceAsStream(path),"UTF-8"));

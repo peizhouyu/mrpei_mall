@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.mrpei.dao.ShippingMapper" >
-  <resultMap id="BaseResultMap" type="cn.mrpei.pojo.Shipping" >
+<mapper namespace="cn.mrpei.manager.dao.ShippingMapper" >
+  <resultMap id="BaseResultMap" type="cn.mrpei.manager.pojo.Shipping" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
@@ -31,7 +31,7 @@
     delete from mmall_shipping
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="cn.mrpei.pojo.Shipping" useGeneratedKeys="true" keyProperty="id">
+  <insert id="insert" parameterType="cn.mrpei.manager.pojo.Shipping" useGeneratedKeys="true" keyProperty="id">
     insert into mmall_shipping (id, user_id, receiver_name, 
       receiver_phone, receiver_mobile, receiver_province, 
       receiver_city, receiver_district, receiver_address, 
@@ -43,7 +43,7 @@
       #{receiverZip,jdbcType=VARCHAR}, now(), now()
       )
   </insert>
-  <insert id="insertSelective" parameterType="cn.mrpei.pojo.Shipping" >
+  <insert id="insertSelective" parameterType="cn.mrpei.manager.pojo.Shipping" >
     insert into mmall_shipping
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -122,7 +122,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.mrpei.pojo.Shipping" >
+  <update id="updateByPrimaryKeySelective" parameterType="cn.mrpei.manager.pojo.Shipping" >
     update mmall_shipping
     <set >
       <if test="userId != null" >
@@ -161,7 +161,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.mrpei.pojo.Shipping" >
+  <update id="updateByPrimaryKey" parameterType="cn.mrpei.manager.pojo.Shipping" >
     update mmall_shipping
     set user_id = #{userId,jdbcType=INTEGER},
       receiver_name = #{receiverName,jdbcType=VARCHAR},
@@ -183,36 +183,36 @@
     and user_id = #{userId}
   </delete>
 
-  <update id="updateByShipping" parameterType="cn.mrpei.pojo.Shipping">
+  <update id="updateByShipping" parameterType="cn.mrpei.manager.pojo.Shipping">
      update mmall_shipping
     <set >
-      <if test="receiverName != null" >
+      <if test="receiverName != null and receiverName != ''" >
         receiver_name = #{receiverName,jdbcType=VARCHAR},
       </if>
-      <if test="receiverPhone != null" >
+      <if test="receiverPhone != null and receiverPhone != ''" >
         receiver_phone = #{receiverPhone,jdbcType=VARCHAR},
       </if>
-      <if test="receiverMobile != null" >
+      <if test="receiverMobile != null and receiverMobile != ''" >
         receiver_mobile = #{receiverMobile,jdbcType=VARCHAR},
       </if>
-      <if test="receiverProvince != null" >
+      <if test="receiverProvince != null and receiverProvince != ''">
         receiver_province = #{receiverProvince,jdbcType=VARCHAR},
       </if>
-      <if test="receiverCity != null" >
+      <if test="receiverCity != null and receiverCity != ''" >
         receiver_city = #{receiverCity,jdbcType=VARCHAR},
       </if>
-      <if test="receiverDistrict != null" >
+      <if test="receiverDistrict != null and receiverDistrict != ''" >
         receiver_district = #{receiverDistrict,jdbcType=VARCHAR},
       </if>
-      <if test="receiverAddress != null" >
+      <if test="receiverAddress != null and receiverAddress != ''" >
         receiver_address = #{receiverAddress,jdbcType=VARCHAR},
       </if>
-      <if test="receiverZip != null" >
+      <if test="receiverZip != null and receiverZip != ''" >
         receiver_zip = #{receiverZip,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
-        create_time = #{createTime,jdbcType=TIMESTAMP},
-      </if>
+      <!--<if test="createTime != null" >-->
+        <!--create_time = #{createTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
 
         update_time = now(),
 
