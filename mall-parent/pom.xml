@@ -39,7 +39,7 @@
     <druid.version>1.1.4</druid.version>
     <httpclient.version>4.5.3</httpclient.version>
     <jstl.version>1.2</jstl.version>
-    <servlet-api.version>2.5</servlet-api.version>
+    <servlet-api.version>3.0.1</servlet-api.version>
     <jsp-api.version>2.0</jsp-api.version>
     <joda-time.version>2.9.9</joda-time.version>
     <commons-lang3.version>3.3.2</commons-lang3.version>
@@ -63,11 +63,25 @@
     <shiro.version>1.4.0</shiro.version>
     <json.version>20171018</json.version>
     <mail.version>1.5.0-b01</mail.version>
+    <tomcat.version>8.0.41</tomcat.version>
+    <alipay.sdk.version>3.0.52.ALL</alipay.sdk.version>
   </properties>
 
 
   <dependencyManagement>
     <dependencies>
+
+      <dependency>
+        <groupId>com.alipay.sdk</groupId>
+        <artifactId>alipay-sdk-java</artifactId>
+        <version>${alipay.sdk.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-servlet-api</artifactId>
+        <version>${tomcat.version}</version>
+      </dependency>
       <!-- 时间操作组件 -->
       <dependency>
         <groupId>joda-time</groupId>
@@ -207,7 +221,7 @@
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
+        <artifactId>javax.servlet-api</artifactId>
         <version>${servlet-api.version}</version>
         <scope>provided</scope>
       </dependency>

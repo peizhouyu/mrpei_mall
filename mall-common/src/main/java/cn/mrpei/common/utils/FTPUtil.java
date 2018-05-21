@@ -8,12 +8,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
-
 /**
- * Date:2017/11/14
- * Time:16:16
- *
- * @author 裴周宇
+ * @author peizhouyu (大数据部-大数据研发部-平台产品研发部)
+ * @version V1.0.0
+ * @description
+ * @date 2018/5/19
+ * @last-modified ：
+ * @class cn.mrpei.common.utils
+ * @copyright Copyright © 2004-2018 京东JD.com ALL Right Reserved
+ * @see
  */
 public class FTPUtil {
     private static  final Logger logger = LoggerFactory.getLogger(FTPUtil.class);
@@ -22,7 +25,7 @@ public class FTPUtil {
     private static String ftpUser = PropertiesUtil.getProperty("ftp.user");
     private static String ftpPass = PropertiesUtil.getProperty("ftp.pass");
 
-    public FTPUtil(String ip,int port,String user,String pwd){
+    public FTPUtil(String ip, int port, String user, String pwd){
         this.ip = ip;
         this.port = port;
         this.user = user;

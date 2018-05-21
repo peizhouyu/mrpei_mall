@@ -1,8 +1,7 @@
 package cn.mrpei.manager.service.impl;
 
 
-import cn.mrpei.common.pojo.Const;
-import cn.mrpei.common.pojo.ServerResponse;
+import cn.mrpei.common.pojo.*;
 import cn.mrpei.common.utils.BigDecimalUtil;
 import cn.mrpei.common.utils.DateTimeUtil;
 import cn.mrpei.common.utils.FTPUtil;
@@ -15,6 +14,8 @@ import cn.mrpei.manager.vo.OrderProductVo;
 import cn.mrpei.manager.vo.OrderVo;
 import cn.mrpei.manager.vo.ShippingVo;
 import com.alipay.api.AlipayResponse;
+import com.alipay.api.domain.ExtendParams;
+import com.alipay.api.domain.GoodsDetail;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
 import com.alipay.demo.trade.config.Configs;
 import com.alipay.demo.trade.model.ExtendParams;
@@ -40,6 +41,8 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
 
+import static cn.mrpei.common.pojo.ResponseCodeEnum.SUCCESS;
+
 /**
  * @author peizhouyu (大数据部-大数据研发部-平台产品研发部)
  * @version V1.0.0
@@ -54,19 +57,19 @@ import java.util.*;
 @Slf4j
 public class OrderServiceImpl implements OrderService {
 
-    private static  AlipayTradeService tradeService;
-    static {
-
-        /** 一定要在创建AlipayTradeService之前调用Configs.init()设置默认参数
-         *  Configs会读取classpath下的zfbinfo.properties文件配置信息，如果找不到该文件则确认该文件是否在classpath目录
-         */
-        Configs.init("properties/zfbinfo.properties");
-
-        /** 使用Configs提供的默认参数
-         *  AlipayTradeService可以使用单例或者为静态成员对象，不需要反复new
-         */
-        tradeService = new AlipayTradeServiceImpl.ClientBuilder().build();
-    }
+//    private static  AlipayTradeService tradeService;
+//    static {
+//
+//        /** 一定要在创建AlipayTradeService之前调用Configs.init()设置默认参数
+//         *  Configs会读取classpath下的zfbinfo.properties文件配置信息，如果找不到该文件则确认该文件是否在classpath目录
+//         */
+//        Configs.init("properties/zfbinfo.properties");
+//
+//        /** 使用Configs提供的默认参数
+//         *  AlipayTradeService可以使用单例或者为静态成员对象，不需要反复new
+//         */
+//        tradeService = new AlipayTradeServiceImpl.ClientBuilder().build();
+//    }
 
     // public static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
@@ -130,11 +133,11 @@ public class OrderServiceImpl implements OrderService {
         orderVo.setOrderNo(order.getOrderNo());
         orderVo.setPayment(order.getPayment());
         orderVo.setPaymentType(order.getPaymentType());
-        orderVo.setPaymentTypeDesc(Const.PaymentTypeEnum.codeOf(order.getPaymentType()).getValue());
+        orderVo.setPaymentTypeDesc(PaymentTypeEnum.codeOf(order.getPaymentType()).getValue());
 
         orderVo.setPostage(order.getPostage());
         orderVo.setStatus(order.getStatus());
-        orderVo.setStatusDesc(Const.OrderStatusEnum.codeOf(order.getStatus()).getValue());
+        orderVo.setStatusDesc(OrderStatusEnum.codeOf(order.getStatus()).getValue());
 
         orderVo.setShippingId(order.getShippingId());
         Shipping shipping = shippingMapper.selectByPrimaryKey(order.getShippingId());
@@ -210,9 +213,9 @@ public class OrderServiceImpl implements OrderService {
         long orderNo = this.generateOrderNo();
         Order order = new Order();
         order.setOrderNo(orderNo);
-        order.setStatus(Const.OrderStatusEnum.NO_PAY.getCode());
+        order.setStatus(OrderStatusEnum.NO_PAY.getCode());
         order.setPostage(0);
-        order.setPaymentType(Const.PaymentTypeEnum.ONLINE_PAY.getCode());
+        order.setPaymentType(PaymentTypeEnum.ONLINE_PAY.getCode());
         order.setPayment(payment);
 
         order.setUserId(userId);
@@ -252,7 +255,7 @@ public class OrderServiceImpl implements OrderService {
         for (Cart cartItem : cartList){
             OrderItem orderItem = new OrderItem();
             Product product = productMapper.selectByPrimaryKey(cartItem.getProductId());
-            if (Const.ProductStatusEnum.ON_SALE.getCode() != product.getStatus()){
+            if (ProductStatusEnum.ON_SALE.getCode() != product.getStatus()){
                 return ServerResponse.createByErrorMessage("产品" + product.getName() + "不在售卖状态");
             }
             //校验库存
@@ -278,12 +281,12 @@ public class OrderServiceImpl implements OrderService {
         if (order == null){
             return ServerResponse.createByErrorMessage("该用户此订单不存在");
         }
-        if (order.getStatus() != Const.OrderStatusEnum.NO_PAY.getCode()){
+        if (order.getStatus() != OrderStatusEnum.NO_PAY.getCode()){
             return ServerResponse.createByErrorMessage("已付款，无法取消订单");
         }
         Order updateOrder = new Order();
         updateOrder.setId(order.getId());
-        updateOrder.setStatus(Const.OrderStatusEnum.CANCELED.getCode());
+        updateOrder.setStatus(OrderStatusEnum.CANCELED.getCode());
 
         int row = orderMapper.updateByPrimaryKeySelective(updateOrder);
         if (row > 0){
@@ -477,7 +480,7 @@ public class OrderServiceImpl implements OrderService {
 
     }
 
-    // 简单打印应答
+//     简单打印应答
     private void dumpResponse(AlipayResponse response) {
         if (response != null) {
             log.info(String.format("code:%s, msg:%s", response.getCode(), response.getMsg()));
@@ -499,20 +502,20 @@ public class OrderServiceImpl implements OrderService {
             return ServerResponse.createByErrorMessage("非本商城订单，回调忽略");
         }
 
-        if (order.getStatus() >= Const.OrderStatusEnum.PAID.getCode()){
+        if (order.getStatus() >= OrderStatusEnum.PAID.getCode()){
             return ServerResponse.createBySuccess("支付宝重复调用");
         }
         if (Const.AlipayCallback.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)){
             //付款时间记录
             order.setPaymentTime(DateTimeUtil.strToDate(params.get("gmt_payment")));
-            order.setStatus(Const.OrderStatusEnum.PAID.getCode());
+            order.setStatus(OrderStatusEnum.PAID.getCode());
             orderMapper.updateByPrimaryKeySelective(order);
         }
 
         PayInfo payInfo = new PayInfo();
         payInfo.setUserId(order.getUserId());
         payInfo.setOrderNo(order.getOrderNo());
-        payInfo.setPayPlatform(Const.PayPlatfromEnum.ALIPAY.getCode());
+        payInfo.setPayPlatform(PayPlatfromEnum.ALIPAY.getCode());
         payInfo.setPlatformNumber(tradeNo);
         payInfo.setPlatformStatus(tradeStatus);
 
@@ -528,7 +531,7 @@ public class OrderServiceImpl implements OrderService {
         if (order == null){
             return ServerResponse.createByErrorMessage("用户没有该订单");
         }
-        if (order.getStatus() >= Const.OrderStatusEnum.PAID.getCode()){
+        if (order.getStatus() >= OrderStatusEnum.PAID.getCode()){
             return ServerResponse.createBySuccess();
         }
         return ServerResponse.createByError();
@@ -576,8 +579,8 @@ public class OrderServiceImpl implements OrderService {
     public ServerResponse<String> manageSendGoods(Long orderNo){
         Order order = orderMapper.selectByOrderNo(orderNo);
         if (order != null){
-            if (order.getStatus() == Const.OrderStatusEnum.PAID.getCode()){
-                order.setStatus(Const.OrderStatusEnum.SHIPPED.getCode());
+            if (order.getStatus() == OrderStatusEnum.PAID.getCode()){
+                order.setStatus(OrderStatusEnum.SHIPPED.getCode());
                 order.setSendTime(new Date());
                 orderMapper.updateByPrimaryKeySelective(order);
                 return ServerResponse.createBySuccess("发货成功");
@@ -589,7 +592,7 @@ public class OrderServiceImpl implements OrderService {
 
     public void closeOrder(int hour){
         Date closeDateTime = DateUtils.addHours(new Date(), -hour);
-        List<Order> orderList = orderMapper.selectOrderStatusByCreateTime(Const.OrderStatusEnum.NO_PAY.getCode(),DateTimeUtil.dateToStr(closeDateTime));
+        List<Order> orderList = orderMapper.selectOrderStatusByCreateTime(OrderStatusEnum.NO_PAY.getCode(),DateTimeUtil.dateToStr(closeDateTime));
 
         for (Order order : orderList){
             List<OrderItem> orderItemList = orderItemMapper.getByOrderNo(order.getOrderNo());

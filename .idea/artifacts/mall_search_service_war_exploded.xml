@@ -21,6 +21,7 @@
           <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.44" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.4" />
+          <element id="library" level="project" name="Maven: com.alipay.sdk:alipay-sdk-java:3.0.52.ALL" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Maven: commons-configuration:commons-configuration:1.10" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />

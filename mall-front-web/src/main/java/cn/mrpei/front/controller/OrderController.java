@@ -15,9 +15,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.alipay.api.AlipayApiException;
-import com.alipay.api.internal.util.AlipaySignature;
-import com.alipay.demo.trade.config.Configs;
+//import com.alipay.api.AlipayApiException;
+//import com.alipay.api.internal.util.AlipaySignature;
+//import com.alipay.demo.trade.config.Configs;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Iterator;
@@ -104,53 +104,53 @@ public class OrderController {
 
 
 
-    @RequestMapping("pay.do")
-    @ResponseBody
-    public ServerResponse pay(HttpServletRequest httpServletRequest, Long orderNo, HttpServletRequest request){
-        User user = CommonMethod.checkLoginStatus(httpServletRequest);
-        if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
-        }
-        String path = request.getSession().getServletContext().getRealPath("upload");
-        return orderService.pay(orderNo,user.getId(),path);
-    }
+//    @RequestMapping("pay.do")
+//    @ResponseBody
+//    public ServerResponse pay(HttpServletRequest httpServletRequest, Long orderNo, HttpServletRequest request){
+//        User user = CommonMethod.checkLoginStatus(httpServletRequest);
+//        if (user == null){
+//            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+//        }
+//        String path = request.getSession().getServletContext().getRealPath("upload");
+//        return orderService.pay(orderNo,user.getId(),path);
+//    }
 
-    @RequestMapping("alipay_callback.do")
-    @ResponseBody
-    public Object alipayCallback(HttpServletRequest request){
-        Map<String,String> params = Maps.newHashMap();
-
-        Map requestParams = request.getParameterMap();
-        for (Iterator iterator = requestParams.keySet().iterator();iterator.hasNext();){
-            String name = (String) iterator.next();
-            String[] values = (String[]) requestParams.get(name);
-            String valueStr = "";
-            for (int i = 0; i < values.length; i++){
-
-                valueStr = (i == values.length - 1) ? valueStr + values[i] : valueStr + values[i] + ",";
-            }
-            params.put(name,valueStr);
-        }
-         //logger.info("支付宝回调,sign:{},trade_status:{},参数:{}",params.get("sign"),params.get("trade_status"),params.toString());
-
-        //重要 验证支付宝回调的正确性
-        //TODO 验证各种数据
-        params.remove("sign_type");
-        try {
-            boolean alipayRASCheckedV2 = AlipaySignature.rsaCheckV2(params, Configs.getAlipayPublicKey(),"utf-8",Configs.getSignType());
-            if (!alipayRASCheckedV2){
-                return ServerResponse.createByErrorMessage("非法请求验证不通过");
-            }
-        } catch (AlipayApiException e) {
-            logger.error("支付宝验证回调异常",e);
-        }
-
-        ServerResponse serverResponse = orderService.aliCallback(params);
-        if (serverResponse.isSuccess()){
-            return Const.AlipayCallback.RESPONSE_SUCCESS;
-        }
-        return Const.AlipayCallback.RESPONSE_FAILED;
-    }
+//    @RequestMapping("alipay_callback.do")
+//    @ResponseBody
+//    public Object alipayCallback(HttpServletRequest request){
+//        Map<String,String> params = Maps.newHashMap();
+//
+//        Map requestParams = request.getParameterMap();
+//        for (Iterator iterator = requestParams.keySet().iterator();iterator.hasNext();){
+//            String name = (String) iterator.next();
+//            String[] values = (String[]) requestParams.get(name);
+//            String valueStr = "";
+//            for (int i = 0; i < values.length; i++){
+//
+//                valueStr = (i == values.length - 1) ? valueStr + values[i] : valueStr + values[i] + ",";
+//            }
+//            params.put(name,valueStr);
+//        }
+//         //logger.info("支付宝回调,sign:{},trade_status:{},参数:{}",params.get("sign"),params.get("trade_status"),params.toString());
+//
+//        //重要 验证支付宝回调的正确性
+//        //TODO 验证各种数据
+//        params.remove("sign_type");
+//        try {
+//            boolean alipayRASCheckedV2 = AlipaySignature.rsaCheckV2(params, Configs.getAlipayPublicKey(),"utf-8",Configs.getSignType());
+//            if (!alipayRASCheckedV2){
+//                return ServerResponse.createByErrorMessage("非法请求验证不通过");
+//            }
+//        } catch (AlipayApiException e) {
+//            logger.error("支付宝验证回调异常",e);
+//        }
+//
+//        ServerResponse serverResponse = orderService.aliCallback(params);
+//        if (serverResponse.isSuccess()){
+//            return Const.AlipayCallback.RESPONSE_SUCCESS;
+//        }
+//        return Const.AlipayCallback.RESPONSE_FAILED;
+//    }
 
     //向支付宝服务器 查询支付状态
     @RequestMapping("query_order_pay_status.do")

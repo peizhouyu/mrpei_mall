@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.mrpei.dao.UserMapper" >
-  <resultMap id="BaseResultMap" type="cn.mrpei.pojo.User" >
+<mapper namespace="cn.mrpei.manager.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="cn.mrpei.manager.pojo.User" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="username" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -36,7 +36,7 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
 
-  <insert id="insert" parameterType="cn.mrpei.pojo.User" >
+  <insert id="insert" parameterType="cn.mrpei.manager.pojo.User" >
     insert into mmall_user (id, username, password, 
       email, phone, question, 
       answer, role, create_time, 
@@ -47,7 +47,7 @@
       now())
   </insert>
 
-  <insert id="insertSelective" parameterType="cn.mrpei.pojo.User" >
+  <insert id="insertSelective" parameterType="cn.mrpei.manager.pojo.User" >
     insert into mmall_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -115,7 +115,7 @@
     </trim>
   </insert>
 
-  <update id="updateByPrimaryKeySelective" parameterType="cn.mrpei.pojo.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="cn.mrpei.manager.pojo.User" >
     update mmall_user
     <set >
       <if test="username != null" >
@@ -151,7 +151,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <update id="updateByPrimaryKey" parameterType="cn.mrpei.pojo.User" >
+  <update id="updateByPrimaryKey" parameterType="cn.mrpei.manager.pojo.User" >
     update mmall_user
     set username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},

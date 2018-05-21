@@ -2,6 +2,7 @@ package cn.mrpei.manager.service.impl;
 
 
 import cn.mrpei.common.pojo.Const;
+import cn.mrpei.common.pojo.ProductStatusEnum;
 import cn.mrpei.common.pojo.ResponseCodeEnum;
 import cn.mrpei.common.pojo.ServerResponse;
 import cn.mrpei.common.utils.DateTimeUtil;
@@ -187,7 +188,7 @@ public class ProductServiceImpl implements ProductService {
         if (product == null){
             return ServerResponse.createByErrorMessage("产品已下架或者删除");
         }
-        if (product.getStatus() != Const.ProductStatusEnum.ON_SALE.getCode()){
+        if (product.getStatus() != ProductStatusEnum.ON_SALE.getCode()){
             return ServerResponse.createByErrorMessage("产品已下架或者删除");
         }
         ProductDetailVo productDetailVo = assembleProductDetailVo(product);
