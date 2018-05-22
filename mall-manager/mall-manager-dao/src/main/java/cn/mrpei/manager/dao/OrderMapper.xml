@@ -241,11 +241,16 @@
     order by create_time desc
   </select>
 
+
   <update id="closeOrderByOrderId" parameterType="int">
     update mmall_order
     set status = 0
     where id = #{id}
   </update>
+
+  <select id="countOrder" resultType="java.lang.Long">
+      select count(*) from mmall_order
+   </select>
 
 
 </mapper>

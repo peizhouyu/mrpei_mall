@@ -219,5 +219,8 @@
     where id = #{id}
     for update
   </select>
+    <select id="countProduct" resultType="java.lang.Long">
+      select count(*) from mmall_product
+    </select>
 
 </mapper>

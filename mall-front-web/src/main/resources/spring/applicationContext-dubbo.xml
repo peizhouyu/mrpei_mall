@@ -17,7 +17,7 @@
     <dubbo:reference interface="cn.mrpei.manager.service.UserService" id="userService" />
     <dubbo:reference interface="cn.mrpei.manager.service.CartService" id="cartService" />
     <dubbo:reference interface="cn.mrpei.manager.service.CategoryService" id="categoryService" />
-    <dubbo:reference interface="cn.mrpei.manager.service.FileService" id="fileService" />
+    <!--<dubbo:reference interface="cn.mrpei.manager.service.FileService" id="fileService" />-->
     <dubbo:reference interface="cn.mrpei.manager.service.OrderService" id="orderService" />
     <dubbo:reference interface="cn.mrpei.manager.service.ProductService" id="productService" />
     <dubbo:reference interface="cn.mrpei.manager.service.ShippingService" id="shippingService" />

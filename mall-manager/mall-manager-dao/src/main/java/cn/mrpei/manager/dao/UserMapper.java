@@ -1,9 +1,12 @@
 package cn.mrpei.manager.dao;
 
 
+import cn.mrpei.manager.pojo.Product;
 import cn.mrpei.manager.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public interface UserMapper {
@@ -34,4 +37,8 @@ public interface UserMapper {
     int checkPassword(@Param("password") String password, @Param("userId") Integer userId);
 
     int checkEmailByUserId(@Param("email") String email, @Param("userId") Integer userId);
+
+    Long countUser();
+
+    List<User> selectList();
 }

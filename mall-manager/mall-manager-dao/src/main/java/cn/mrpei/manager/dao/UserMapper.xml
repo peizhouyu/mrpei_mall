@@ -212,4 +212,16 @@
     where email = #{email}
     and id != #{userId}
   </select>
+
+    <select id="countUser" resultType="java.lang.Long">
+      select count(*) from mmall_user
+      where role = 0
+    </select>
+
+    <select id="selectList" resultType="cn.mrpei.manager.pojo.User">
+      select
+      <include refid="Base_Column_List" />
+      from mmall_user
+      order by id asc
+    </select>
 </mapper>

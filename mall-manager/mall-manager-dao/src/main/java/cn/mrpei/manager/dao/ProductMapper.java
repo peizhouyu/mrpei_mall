@@ -29,5 +29,7 @@ public interface ProductMapper {
 
     //用Integer 因为int无法为null 有些商品可能被删除
     Integer selectStockByProductId(Integer id);
+
+    long countProduct();
 }
 

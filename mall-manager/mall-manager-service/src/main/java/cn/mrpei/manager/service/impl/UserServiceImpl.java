@@ -8,10 +8,12 @@ import cn.mrpei.common.utils.RedisPoolUtil;
 import cn.mrpei.manager.dao.UserMapper;
 import cn.mrpei.manager.pojo.User;
 import cn.mrpei.manager.service.UserService;
+import com.github.pagehelper.PageHelper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -198,4 +200,18 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public Long getUserCount() {
+        return userMapper.countUser();
+    }
+
+    @Override
+    public ServerResponse getUserList(int pageNum, int pageSize) {
+        PageHelper.startPage(pageNum,pageSize);
+        List<User> userList = userMapper.selectList();
+        for (User user : userList){
+            user.setPassword(null);
+        }
+        return ServerResponse.createBySuccess(userList);
+    }
 }

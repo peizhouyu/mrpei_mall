@@ -22,7 +22,7 @@
     <dubbo:service interface="cn.mrpei.manager.service.UserService" ref="userServiceImpl" timeout="10000"/>
     <dubbo:service interface="cn.mrpei.manager.service.CartService" ref="cartServiceImpl" timeout="10000"/>
     <dubbo:service interface="cn.mrpei.manager.service.CategoryService" ref="categoryServiceImpl" timeout="10000"/>
-    <dubbo:service interface="cn.mrpei.manager.service.FileService" ref="fileServiceImpl" timeout="10000"/>
+    <!--<dubbo:service interface="cn.mrpei.manager.service.FileService" ref="fileServiceImpl" timeout="10000"/>-->
     <dubbo:service interface="cn.mrpei.manager.service.OrderService" ref="orderServiceImpl" timeout="10000"/>
     <dubbo:service interface="cn.mrpei.manager.service.ProductService" ref="productServiceImpl" timeout="10000"/>
     <dubbo:service interface="cn.mrpei.manager.service.ShippingService" ref="shippingServiceImpl" timeout="10000"/>

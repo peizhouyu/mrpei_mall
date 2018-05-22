@@ -26,4 +26,7 @@ public interface UserService {
     ServerResponse<User> updateInformation(User user);
     ServerResponse<User> getInformation(Integer userId);
     ServerResponse checkAdminRole(User user);
+
+    Long getUserCount();
+    ServerResponse getUserList(int pageNum, int pageSize);
 }

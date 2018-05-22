@@ -240,7 +240,10 @@ public class ProductServiceImpl implements ProductService {
         return ServerResponse.createBySuccess(pageInfo);
     }
 
-
+    @Override
+    public Long getProductCount() {
+        return productMapper.countProduct();
+    }
 
 
 }

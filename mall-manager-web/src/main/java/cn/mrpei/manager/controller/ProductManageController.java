@@ -44,8 +44,8 @@ public class ProductManageController {
     @Autowired
     private ProductService productService;
 
-    @Autowired
-    private FileService fileService;
+//    @Autowired
+//    private FileService fileService;
 
     @RequestMapping("/save.do")
     @ResponseBody
@@ -83,13 +83,18 @@ public class ProductManageController {
     @RequestMapping("/upload.do")
     @ResponseBody
     public ServerResponse upload(@RequestParam(value = "upload_file",required = false) MultipartFile file, HttpServletRequest request){
-        String path = request.getSession().getServletContext().getRealPath("upload");
-        String targetFileName = FileUtil.upload(file,path);
-        String url = PropertiesUtil.getProperty("ftp.server.http.prefix")+ targetFileName;
-
         Map fileMap = Maps.newHashMap();
-        fileMap.put("uri",targetFileName);
-        fileMap.put("url",url);
+        if (file.getSize() == 0){
+            fileMap.put("msg","文件为空");
+        }else {
+            String path = request.getSession().getServletContext().getRealPath("upload");
+            String targetFileName = FileUtil.upload(file,path);
+            String url = PropertiesUtil.getProperty("ftp.server.http.prefix")+ targetFileName;
+
+
+            fileMap.put("uri",targetFileName);
+            fileMap.put("url",url);
+        }
         return ServerResponse.createBySuccess(fileMap);
     }
 
@@ -98,19 +103,25 @@ public class ProductManageController {
     public Map richtextImgUpload(@RequestParam(value = "upload_file",required = false) MultipartFile file, HttpServletRequest request, HttpServletResponse response){
         //富文本中对于返回值有自己的要求，本项目前端使用 simditor 按照其官方文档要求进行返回
         Map resultMap = Maps.newHashMap();
-        //增加业务逻辑
-        String path = request.getSession().getServletContext().getRealPath("upload");
-        String targetFileName = FileUtil.upload(file,path);
-        if (StringUtils.isBlank(targetFileName)){
+        if (file.getSize() == 0){
             resultMap.put("success",false);
-            resultMap.put("msg","上传失败");
-            return resultMap;
+            resultMap.put("msg","文件为空");
+        }else{
+            //增加业务逻辑
+            String path = request.getSession().getServletContext().getRealPath("upload");
+            String targetFileName = FileUtil.upload(file,path);
+            if (StringUtils.isBlank(targetFileName)){
+                resultMap.put("success",false);
+                resultMap.put("msg","上传失败");
+                return resultMap;
+            }
+            String url = PropertiesUtil.getProperty("ftp.server.http.prefix")+ targetFileName;
+            resultMap.put("success",true);
+            resultMap.put("msg","上传成功");
+            resultMap.put("file_path",url);
+            response.addHeader("Access-Control-Allow-Headers","X-File-Name");
         }
-        String url = PropertiesUtil.getProperty("ftp.server.http.prefix")+ targetFileName;
-        resultMap.put("success",true);
-        resultMap.put("msg","上传成功");
-        resultMap.put("file_path",url);
-        response.addHeader("Access-Control-Allow-Headers","X-File-Name");
+
         return resultMap;
 
     }

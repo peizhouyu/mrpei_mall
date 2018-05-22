@@ -40,4 +40,6 @@ public interface OrderService {
     //hour个小时内未付款的订单，进行关闭
     void closeOrder(int hour);
 
+    Long getOrderCount();
+
 }

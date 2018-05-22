@@ -584,6 +584,8 @@ public class OrderServiceImpl implements OrderService {
                 order.setSendTime(new Date());
                 orderMapper.updateByPrimaryKeySelective(order);
                 return ServerResponse.createBySuccess("发货成功");
+            }else {
+                return ServerResponse.createByErrorMessage(OrderStatusEnum.NO_PAY.getValue());
             }
         }
         return ServerResponse.createByErrorMessage("发货失败");
@@ -615,7 +617,10 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
-
+    @Override
+    public Long getOrderCount() {
+        return orderMapper.countOrder();
+    }
 
 
 }

@@ -34,4 +34,6 @@ public interface OrderMapper {
 
     int closeOrderByOrderId(Integer id);
 
+    Long countOrder();
+
 }
