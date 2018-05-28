@@ -89,7 +89,7 @@ public class UserController {
         if (user != null){
             return ServerResponse.createBySuccess(user);
         }
-        return ServerResponse.createByErrorMessage("用户未登录");
+        return ServerResponse.createByErrorMessage(ResponseCodeEnum.NEED_LOGIN.getDesc());
     }
 
     @RequestMapping(value = "/forget_get_question.do", method = RequestMethod.POST)
@@ -115,7 +115,7 @@ public class UserController {
     public ServerResponse<String> resetPassword(HttpServletRequest httpServletRequest, String passwordOld, String passwordNew){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorMessage("用户未登录");
+            return ServerResponse.createByErrorMessage(ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return userService.resetPassowrd(passwordOld, passwordNew,user);
     }
@@ -125,7 +125,7 @@ public class UserController {
     public ServerResponse<User> updateInformation(HttpServletRequest httpServletRequest, User user){
         User currentUser = CommonMethod.checkLoginStatus(httpServletRequest);
         if (currentUser == null){
-            return ServerResponse.createByErrorMessage("用户未登录");
+            return ServerResponse.createByErrorMessage(ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         user.setId(currentUser.getId());
         user.setUsername(currentUser.getUsername());
@@ -142,7 +142,7 @@ public class UserController {
     public ServerResponse<User> getInformation(HttpServletRequest httpServletRequest){
         User currentUser = CommonMethod.checkLoginStatus(httpServletRequest);
         if (currentUser == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return userService.getInformation(currentUser.getId());
     }

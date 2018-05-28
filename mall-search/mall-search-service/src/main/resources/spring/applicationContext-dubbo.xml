@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+
+    <!-- 使用dubbo发布服务 -->
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="mall-manager" />
+    <dubbo:registry protocol="zookeeper" address="zookeeper://119.28.83.123:2181"/>
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20880" />
+    <!-- 用hessian协议在 20887 端口暴露服务 -->
+    <!--<dubbo:protocol name="hessian" port="20887"/>-->
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="cn.mrpei.search.service.SearchService" ref="searchServiceImpl" timeout="10000"/>
+    <dubbo:service interface="cn.mrpei.search.service.SearchItemService" ref="searchItemServiceImpl" timeout="10000"/>
+
+    <!-- 声明需要暴露的服务接口 -->
+
+
+
+
+
+</beans>

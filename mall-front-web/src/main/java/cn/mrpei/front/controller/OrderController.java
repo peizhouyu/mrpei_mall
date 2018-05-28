@@ -44,7 +44,7 @@ public class OrderController {
     public ServerResponse create(HttpServletRequest httpServletRequest, Integer shippingId){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return orderService.createOrder(user.getId(),shippingId);
     }
@@ -54,7 +54,7 @@ public class OrderController {
     public ServerResponse cancel(HttpServletRequest httpServletRequest, Long orderNo){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return orderService.cancel(user.getId(),orderNo);
     }
@@ -65,7 +65,7 @@ public class OrderController {
     public ServerResponse getOrderCartProduct(HttpServletRequest httpServletRequest){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return orderService.getOrderCartProduct(user.getId());
     }
@@ -77,7 +77,7 @@ public class OrderController {
     public ServerResponse detail(HttpServletRequest httpServletRequest, Long orderNo){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return orderService.getOrderDetail(user.getId(),orderNo);
     }
@@ -91,7 +91,7 @@ public class OrderController {
                                @RequestParam(value = "pageSize", defaultValue = "10") int pageSize){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return orderService.getOrderList(user.getId(),pageNum,pageSize);
     }
@@ -109,7 +109,7 @@ public class OrderController {
 //    public ServerResponse pay(HttpServletRequest httpServletRequest, Long orderNo, HttpServletRequest request){
 //        User user = CommonMethod.checkLoginStatus(httpServletRequest);
 //        if (user == null){
-//            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+//            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
 //        }
 //        String path = request.getSession().getServletContext().getRealPath("upload");
 //        return orderService.pay(orderNo,user.getId(),path);
@@ -158,7 +158,7 @@ public class OrderController {
     public ServerResponse<Boolean> queryOrderPayStatus(HttpServletRequest httpServletRequest, Long orderNo){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
 
         ServerResponse serverResponse = orderService.queryOrderPayStatus(user.getId(),orderNo);

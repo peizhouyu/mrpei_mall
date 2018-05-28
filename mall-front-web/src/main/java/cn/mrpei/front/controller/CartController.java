@@ -34,7 +34,7 @@ public class CartController {
     public ServerResponse<CartVo> list(HttpServletRequest httpServletRequest){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
 
         return cartService.list(user.getId());
@@ -45,7 +45,7 @@ public class CartController {
     public ServerResponse<CartVo> add(HttpServletRequest httpServletRequest, Integer count, Integer productId){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
 
         return cartService.add(user.getId(),productId,count);
@@ -57,7 +57,7 @@ public class CartController {
     public ServerResponse<CartVo> update(HttpServletRequest httpServletRequest, Integer count, Integer productId){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return cartService.update(user.getId(),productId,count);
     }
@@ -68,7 +68,7 @@ public class CartController {
     public ServerResponse<CartVo> deleteProduct(HttpServletRequest httpServletRequest, String  productIds){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return cartService.deleteProduct(user.getId(),productIds);
     }
@@ -78,7 +78,7 @@ public class CartController {
     public ServerResponse<CartVo> selectAll(HttpServletRequest httpServletRequest){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return cartService.selectOrUnSelectAll(user.getId(),Const.Cart.CHECKED);
     }
@@ -88,7 +88,7 @@ public class CartController {
     public ServerResponse<CartVo> unSelectAll(HttpServletRequest httpServletRequest){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return cartService.selectOrUnSelectAll(user.getId(),Const.Cart.UN_CHECKED);
     }
@@ -98,7 +98,7 @@ public class CartController {
     public ServerResponse<CartVo> select(HttpServletRequest httpServletRequest, Integer productId){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return cartService.selectOrUnSelectOne(user.getId(),productId,Const.Cart.CHECKED);
     }
@@ -108,7 +108,7 @@ public class CartController {
     public ServerResponse<CartVo> unSelect(HttpServletRequest httpServletRequest, Integer productId){
         User user = CommonMethod.checkLoginStatus(httpServletRequest);
         if (user == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),"未登录，需要转到登录页！");
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(),ResponseCodeEnum.NEED_LOGIN.getDesc());
         }
         return cartService.selectOrUnSelectOne(user.getId(),productId,Const.Cart.UN_CHECKED);
     }
