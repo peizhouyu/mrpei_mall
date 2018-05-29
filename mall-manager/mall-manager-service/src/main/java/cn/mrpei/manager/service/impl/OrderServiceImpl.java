@@ -33,6 +33,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.time.DateUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -54,7 +56,7 @@ import static cn.mrpei.common.pojo.ResponseCodeEnum.SUCCESS;
  * @see
  */
 @Service
-@Slf4j
+
 public class OrderServiceImpl implements OrderService {
 
 //    private static  AlipayTradeService tradeService;
@@ -71,7 +73,7 @@ public class OrderServiceImpl implements OrderService {
 //        tradeService = new AlipayTradeServiceImpl.ClientBuilder().build();
 //    }
 
-    // public static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
+    public static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
     @Autowired
     private OrderMapper orderMapper;

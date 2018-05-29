@@ -2,11 +2,11 @@ package cn.mrpei.manager.dao;
 
 
 import cn.mrpei.manager.pojo.Category;
-import org.springframework.stereotype.Repository;
+
 
 import java.util.List;
 
-@Repository
+
 public interface CategoryMapper {
     int deleteByPrimaryKey(Integer id);
 

@@ -3,11 +3,11 @@ package cn.mrpei.manager.dao;
 
 import cn.mrpei.manager.pojo.Order;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
+
 
 import java.util.List;
 
-@Repository
+
 public interface OrderMapper {
     int deleteByPrimaryKey(Integer id);
 

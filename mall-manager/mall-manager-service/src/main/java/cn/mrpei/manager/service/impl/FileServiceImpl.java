@@ -5,6 +5,8 @@ import cn.mrpei.common.utils.FTPUtil;
 import cn.mrpei.manager.service.FileService;
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,10 +24,10 @@ import java.util.UUID;
  * @see
  */
 @Service
-@Slf4j
+
 public class FileServiceImpl implements FileService {
 
-    //private Logger logger = LoggerFactory.getLogger(FileServiceImpl.class);
+    private Logger log = LoggerFactory.getLogger(FileServiceImpl.class);
 
     public String upload(MultipartFile file, String path){
         String fileName = file.getOriginalFilename();

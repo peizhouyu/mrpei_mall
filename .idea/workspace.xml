@@ -11,7 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a32c3bff-14d1-460c-97f3-a119feb55a8f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/PayInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/PayInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ShippingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ShippingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-parent/target/" />
     <ignored path="$PROJECT_DIR$/mall-common/target/" />
@@ -54,28 +66,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="1472">
+              <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-parent/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="255" column="30" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="30" />
+            <state relative-caret-position="2760">
+              <caret line="120" column="63" selection-start-line="120" selection-start-column="63" selection-end-line="120" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mall-parent/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="78" column="28" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="28" />
+            <state relative-caret-position="166">
+              <caret line="106" column="13" selection-start-line="105" selection-start-column="5" selection-end-line="109" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -93,12 +114,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>com.fasterxml.jackson.dataformat</find>
-      <find>org.hashids</find>
-      <find>jackson</find>
-      <find>org.codehaus.jackson</find>
-      <find>org.apache.tomcat</find>
-      <find>servlet</find>
       <find>cn.mrpei.pojo.Cart</find>
       <find>cn.mrpei.pojo.Category</find>
       <find>cn.mrpei.pojo.OrderItem</find>
@@ -123,6 +138,12 @@
       <find>mall-manager</find>
       <find>cn.mrpei.</find>
       <find>redis.clients</find>
+      <find>com.fasterxml.jackson.core</find>
+      <find>jackson-databind</find>
+      <find>log</find>
+      <find>lombok</find>
+      <find>apache.commons</find>
+      <find>apache</find>
     </findStrings>
     <replaceStrings>
       <replace>MallResult</replace>
@@ -153,21 +174,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/utils/FileUtil.java" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/resources/spring/applicationContext-dubbo.xml" />
-        <option value="$PROJECT_DIR$/mall-manager-web/src/main/resources/spring/applicationContext-dubbo.xml" />
-        <option value="$PROJECT_DIR$/mall-manager-web/src/main/java/cn/mrpei/manager/controller/ProductManageController.java" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ProductMapper.java" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-interface/src/main/java/cn/mrpei/manager/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderMapper.java" />
-        <option value="$PROJECT_DIR$/mall-manager-web/src/main/java/cn/mrpei/manager/controller/InfoController.java" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderMapper.xml" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-interface/src/main/java/cn/mrpei/manager/service/ProductService.java" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-interface/src/main/java/cn/mrpei/manager/service/UserService.java" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/UserMapper.xml" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall-manager-web/src/main/java/cn/mrpei/manager/controller/UserManageController.java" />
@@ -200,10 +209,22 @@
         <option value="$PROJECT_DIR$/mall-front-web/src/main/java/cn/mrpei/front/controller/CartController.java" />
         <option value="$PROJECT_DIR$/mall-front-web/src/main/java/cn/mrpei/front/controller/UserController.java" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-interface/src/main/java/cn/mrpei/manager/service/FileService.java" />
         <option value="$PROJECT_DIR$/mall-front-web/src/main/resources/spring/applicationContext-dubbo.xml" />
         <option value="$PROJECT_DIR$/mall-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CartMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderItemMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/PayInfoMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ProductMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ShippingMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/FileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" />
       </list>
     </option>
   </component>
@@ -230,7 +251,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall-manager-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall-manager-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -238,8 +269,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="367" />
-    <option name="y" value="-29" />
+    <option name="x" value="283" />
+    <option name="y" value="-8" />
     <option name="width" value="1461" />
     <option name="height" value="814" />
   </component>
@@ -409,75 +440,88 @@
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="mrpei" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="mrpei" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="mrpei" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="mrpei" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
               <item name="mall-manager-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
@@ -549,7 +593,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.mall-manager-service">
+  <component name="RunManager" selected="Tomcat Server.mall-front-web">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -1036,11 +1080,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527522564443</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix bug">
+      <created>1527601986006</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1527601986006</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107761000" />
+    <option name="totallyTimeSpent" value="113988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1049,7 +1100,7 @@
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="bottom" id="Event Log" order="18" side_tool="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Application Servers" order="26" weight="0.328594" />
-      <window_info anchor="right" id="Maven Projects" order="12" visible="true" weight="0.13965885" />
+      <window_info anchor="right" id="Maven Projects" order="12" weight="0.28464818" />
       <window_info anchor="bottom" id="Database Changes" order="21" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -1057,8 +1108,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.60996747" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.60996747" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="20" weight="0.3261105" />
       <window_info anchor="right" id="Palette&#9;" order="11" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="19" />
@@ -1066,8 +1118,8 @@
       <window_info anchor="bottom" id="Version Control" order="23" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.33044422" />
       <window_info anchor="bottom" id="Spring" order="22" />
-      <window_info anchor="bottom" id="Terminal" order="24" weight="0.42470205" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
+      <window_info anchor="bottom" id="Terminal" order="24" weight="0.37053087" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
       <window_info anchor="right" id="Theme Preview" order="13" />
@@ -1100,7 +1152,6 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Terminal" order="24" weight="0.42470205" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.60996747" />
-      <window_info anchor="bottom" id="Messages" order="20" weight="0.3261105" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info id="Designer" order="2" />
@@ -1157,7 +1208,8 @@
     <MESSAGE value="update README" />
     <MESSAGE value="数据环境切换为线上环境" />
     <MESSAGE value="客户端常规接口 全部通过" />
-    <option name="LAST_COMMIT_MESSAGE" value="客户端常规接口 全部通过" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1177,112 +1229,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/dto/EsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/dto/EsCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.1.16.Final/netty-codec-http-4.1.16.Final.jar!/io/netty/handler/codec/http/HttpUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/cn/mrpei/common/utils/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-interface/src/main/java/cn/mrpei/search/service/SearchItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.2.3/elasticsearch-6.2.3.jar!/org/elasticsearch/common/xcontent/XContentBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="281" column="27" selection-start-line="281" selection-start-column="27" selection-end-line="281" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/4.1.6/pagehelper-4.1.6.jar!/com/github/pagehelper/PageInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.2.3/elasticsearch-6.2.3.jar!/org/elasticsearch/action/search/SearchType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-pojo/src/main/java/cn/mrpei/manager/pojo/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-interface/src/main/java/cn/mrpei/search/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-service/src/main/java/cn/mrpei/search/controller.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="23" column="11" selection-start-line="23" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-service/src/main/resources/spring/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-search/mall-search-service/src/main/java/cn/mrpei/search/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.16.Final/netty-common-4.1.16.Final.jar!/io/netty/util/NettyRuntime.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1336,27 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2894">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9825">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1430,25 +1355,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1721" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-interface/src/main/java/cn/mrpei/manager/service/FileService.java">
@@ -1493,13 +1400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -1507,10 +1407,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE.jar!/org/springframework/stereotype/Repository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/CartMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/PayInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/ShippingMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/src/main/java/cn/mrpei/manager/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1703">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/ShippingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/org/apache/commons/lang3/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/FileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mall-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="255" column="30" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="30" />
+        <state relative-caret-position="166">
+          <caret line="106" column="13" selection-start-line="105" selection-start-column="5" selection-end-line="109" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/src/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="120" column="63" selection-start-line="120" selection-start-column="63" selection-end-line="120" selection-end-column="63" />
         </state>
       </provider>
     </entry>
