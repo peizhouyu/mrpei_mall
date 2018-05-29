@@ -120,6 +120,7 @@
                 <configuration>
                     <webXml>src\webapp\WEB-INF\web.xml</webXml>
                 </configuration>
+                <version>2.5</version>
             </plugin>
         </plugins>
     </build>

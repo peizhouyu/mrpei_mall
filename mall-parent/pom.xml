@@ -13,6 +13,14 @@
   <!-- FIXME change it to the project's website -->
   <url>https://www.mrpei.cn</url>
 
+  <modules>
+   <module>../mall-common</module>
+    <module>../mall-front-web</module>
+    <module>../mall-manager</module>
+    <module>../mall-manager-web</module>
+    <module>../mall-search</module>
+    <module>../mall-sso</module>
+  </modules>
   <developers>
     <developer>
       <name>mrpei</name>
