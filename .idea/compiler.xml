@@ -21,22 +21,22 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="database-generator" target="1.8" />
-      <module name="mall-common" target="1.8" />
-      <module name="mall-front-web" target="1.8" />
-      <module name="mall-manager" target="1.8" />
-      <module name="mall-manager-dao" target="1.8" />
-      <module name="mall-manager-interface" target="1.8" />
-      <module name="mall-manager-pojo" target="1.8" />
-      <module name="mall-manager-service" target="1.8" />
-      <module name="mall-manager-web" target="1.8" />
-      <module name="mall-parent" target="1.8" />
-      <module name="mall-search" target="1.8" />
-      <module name="mall-search-interface" target="1.8" />
-      <module name="mall-search-service" target="1.8" />
-      <module name="mall-sso" target="1.8" />
-      <module name="mall-sso-interface" target="1.8" />
-      <module name="mall-sso-service" target="1.8" />
+      <module name="database-generator" target="1.7" />
+      <module name="mall-common" target="1.7" />
+      <module name="mall-front-web" target="1.7" />
+      <module name="mall-manager" target="1.7" />
+      <module name="mall-manager-dao" target="1.7" />
+      <module name="mall-manager-interface" target="1.7" />
+      <module name="mall-manager-pojo" target="1.7" />
+      <module name="mall-manager-service" target="1.7" />
+      <module name="mall-manager-web" target="1.7" />
+      <module name="mall-parent" target="1.7" />
+      <module name="mall-search" target="1.7" />
+      <module name="mall-search-interface" target="1.7" />
+      <module name="mall-search-service" target="1.7" />
+      <module name="mall-sso" target="1.7" />
+      <module name="mall-sso-interface" target="1.7" />
+      <module name="mall-sso-service" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

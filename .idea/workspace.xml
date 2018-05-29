@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a32c3bff-14d1-460c-97f3-a119feb55a8f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-parent/target/" />
@@ -55,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="-1039">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -67,17 +65,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="36" />
+            <state relative-caret-position="426">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="125" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mall-parent/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            <state relative-caret-position="453">
+              <caret line="449" column="22" selection-start-line="449" selection-start-column="22" selection-end-line="449" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -221,9 +219,9 @@
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/FileServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/src/main/java/cn/mrpei/manager/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-parent/pom.xml" />
         <option value="$PROJECT_DIR$/mall-common/pom.xml" />
         <option value="$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-parent/pom.xml" />
       </list>
     </option>
   </component>
@@ -258,7 +256,7 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mall-manager-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -330,7 +328,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48735633" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -866,20 +864,27 @@
       <option name="project" value="LOCAL" />
       <updated>1527608575472</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix bug">
+      <created>1527610930797</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1527610930797</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116232000" />
+    <option name="totallyTimeSpent" value="117426000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="bottom" id="Event Log" order="18" side_tool="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Application Servers" order="26" weight="0.328594" />
-      <window_info anchor="right" id="Maven Projects" order="12" visible="true" weight="0.28464818" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="12" visible="true" weight="0.28464818" />
       <window_info anchor="bottom" id="Database Changes" order="21" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -897,8 +902,8 @@
       <window_info anchor="bottom" id="Version Control" order="23" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.33044422" />
       <window_info anchor="bottom" id="Spring" order="22" />
-      <window_info anchor="bottom" id="Terminal" order="24" visible="true" weight="0.37053087" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
+      <window_info anchor="bottom" id="Terminal" order="24" weight="0.37053087" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
       <window_info anchor="right" id="Theme Preview" order="13" />
@@ -1346,24 +1351,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-parent/pom.xml">
+    <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="-1039">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-manager/mall-manager-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="426">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="125" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-manager/pom.xml">
+    <entry file="file://$PROJECT_DIR$/mall-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="453">
+          <caret line="449" column="22" selection-start-line="449" selection-start-column="22" selection-end-line="449" selection-end-column="22" />
         </state>
       </provider>
     </entry>
