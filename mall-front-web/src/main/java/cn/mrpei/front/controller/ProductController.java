@@ -5,7 +5,7 @@ import cn.mrpei.common.pojo.ServerResponse;
 import cn.mrpei.manager.service.ProductService;
 import cn.mrpei.manager.vo.ProductDetailVo;
 import com.github.pagehelper.PageInfo;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

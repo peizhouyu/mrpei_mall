@@ -8,8 +8,10 @@ import cn.mrpei.common.utils.JsonUtil;
 import cn.mrpei.common.utils.RedisShardedPoolUtil;
 import cn.mrpei.manager.pojo.User;
 import com.google.common.collect.Maps;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
+
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,8 +26,10 @@ import java.util.Map;
 /**
  * 请求拦截器 统一判断用户权限
  */
-@Slf4j
+
 public class AuthorityInterceptor implements HandlerInterceptor {
+
+    private Logger log = LoggerFactory.getLogger(AuthorityInterceptor.class);
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object handler) throws Exception {
         log.info("preHandle");
