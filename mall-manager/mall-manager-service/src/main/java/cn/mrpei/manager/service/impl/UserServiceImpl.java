@@ -9,6 +9,7 @@ import cn.mrpei.manager.dao.UserMapper;
 import cn.mrpei.manager.pojo.User;
 import cn.mrpei.manager.service.UserService;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -212,6 +213,7 @@ public class UserServiceImpl implements UserService {
         for (User user : userList){
             user.setPassword(null);
         }
-        return ServerResponse.createBySuccess(userList);
+        PageInfo pageInfo = new PageInfo(userList);
+        return ServerResponse.createBySuccess(pageInfo);
     }
 }
